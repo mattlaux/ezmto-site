@@ -229,15 +229,6 @@ const Home: NextPage = () => {
           </div>
           {/* Side with image */}
           <div className="col-12 col-md-6 mt-3">
-            <video
-              className="d-none"
-              src="/static/ezMTOsite/GOPR4876.MP4"
-              width="320"
-              height="240"
-              controls
-            >
-              Video not supported
-            </video>
             <figure>
               <a href="{% url 'about'%}">
                 <Image
