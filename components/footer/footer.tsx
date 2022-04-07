@@ -3,9 +3,7 @@ const Footer = () => {
     <footer className="container-fluid bg-light overflow-hidden">
       <div className="row mt-5 pt-md-5 mb-3">
         <div className="d-md-none d-flex justify-content-center">
-          <div className="col-6">
-            <button type="button" className="btn btn-primary">Enroll in a free trial today!</button>
-          </div>
+          <button type="button" className="btn btn-primary">Enroll in a free trial today!</button>
         </div>
         <div className="d-none d-md-flex justify-content-center">
           <p className="fs-4">Enroll in a free trial!<span><button type="button"
