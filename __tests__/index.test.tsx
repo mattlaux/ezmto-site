@@ -2,13 +2,18 @@ import { screen, render } from '@testing-library/react';
 import Home from '../pages/index';
 
 describe('<Home />', () => {
-
   test('renders banner with text and two buttons and all images', () => {
     render(<Home />);
 
-    const bannerText  = screen.getByText(/ezMTO eliminates 95% of time and energy for a material takeoff/i);
-    const bannerSubText = screen.getByText(/Discover how ezMTO can increase your efficiency/i);
-    const trialButton = screen.getByRole('button', { name: /start a free trial/i });
+    const bannerText = screen.getByText(
+      /ezMTO eliminates 95% of time and energy for a material takeoff/i
+    );
+    const bannerSubText = screen.getByText(
+      /Discover how ezMTO can increase your efficiency/i
+    );
+    const trialButton = screen.getByRole('button', {
+      name: /start a free trial/i,
+    });
     const demoButton = screen.getByRole('button', { name: /watch a demo/i });
     const images = screen.getAllByRole('img');
 
@@ -22,7 +27,9 @@ describe('<Home />', () => {
   test('renders 4 cards', () => {
     render(<Home />);
 
-    const title = screen.getByText(/discover how ezmto can simplify your material takeoff and quote process/i);
+    const title = screen.getByText(
+      /discover how ezmto can simplify your material takeoff and quote process/i
+    );
     const card1 = screen.getByText(/automated mtos/i);
     const card2 = screen.getByText(/review previous versions of mtos/i);
     const card3 = screen.getByText(/efficient quotes/i);
@@ -40,10 +47,16 @@ describe('<Home />', () => {
   test('renders table', () => {
     render(<Home />);
 
-    const tableTitle = screen.getByText(/simple, straight-forward cost savings/i);
-    const tableSubTitle = screen.getByText(/costs of doing a 100 isometric takeoff in-house/i);
+    const tableTitle = screen.getByText(
+      /simple, straight-forward cost savings/i
+    );
+    const tableSubTitle = screen.getByText(
+      /costs of doing a 100 isometric takeoff in-house/i
+    );
     const table = screen.getByRole('table');
-    const tableNotes = screen.getByText(/avg determined from previous takeoffs/i);
+    const tableNotes = screen.getByText(
+      /avg determined from previous takeoffs/i
+    );
 
     expect(tableTitle).toBeInTheDocument();
     expect(tableSubTitle).toBeInTheDocument();
@@ -55,9 +68,13 @@ describe('<Home />', () => {
     render(<Home />);
 
     const comparisonTitle = screen.getByText(/save precious time and money/i);
-    const ctaText = screen.getByText(/upload your isometrics to ezmto's software/i);
-    const ctaButton = screen.getByRole('button', { name: /click here to get a free material takeoff on us/i});
-    const image = screen.getByRole('img', { name: ''});
+    const ctaText = screen.getByText(
+      /upload your isometrics to ezmto's software/i
+    );
+    const ctaButton = screen.getByRole('button', {
+      name: /click here to get a free material takeoff on us/i,
+    });
+    const image = screen.getByRole('img', { name: '' });
 
     expect(comparisonTitle).toBeInTheDocument();
     expect(ctaText).toBeInTheDocument();

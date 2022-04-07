@@ -2,7 +2,6 @@ import { screen, render } from '@testing-library/react';
 import Header from '../components/header/header';
 
 describe('<Header />', () => {
-
   test('has ezMTO logo and home, about, contact, and login menu links', () => {
     render(<Header />);
 
@@ -17,7 +16,5 @@ describe('<Header />', () => {
     expect(aboutLink).toBeInTheDocument();
     expect(contactLink).toBeInTheDocument();
     expect(loginLink).toBeInTheDocument();
-
   });
-
 });
