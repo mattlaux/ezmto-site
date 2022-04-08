@@ -26,7 +26,6 @@ const ContactForm = () => {
               autoComplete="given-name"
               required
               className="form-control"
-              placeholder="placeholder text"
             />
             <div className="invalid-feedback">This field is required.</div>
           </div>
