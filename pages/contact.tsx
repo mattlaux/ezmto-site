@@ -19,12 +19,12 @@ export const Contact: NextPage = () => {
       </Head>
       <Header></Header>
       <article
-        className={`${styles.contactBackground} container-fluid mb-3 bg-image text-white`}
+        className={`${styles.contactBackground} container-fluid mb-3 bg-image`}
       >
         <div className="row">
           <div className="col-2"></div>
           <div className="col-8">
-            <header>
+            <header className="text-white">
               <h1 className="display-3 text-center pt-5">CONTACT US</h1>
               <p className="fs-4 text-center">
                 If you are interested in testing out our software or just want

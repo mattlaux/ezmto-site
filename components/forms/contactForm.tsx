@@ -11,7 +11,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={submitContactInfo}
-      className="form mb-5 pb-5 needs-validation"
+      className="form mb-5 pb-5 needs-validation bg-light rounded pt-3"
       noValidate
     >
       <div className="d-none d-md-block">
