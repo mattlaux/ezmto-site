@@ -8,7 +8,7 @@ const About: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>About ezMTO</title>
+        <title>Our Takeoff Philosophy | ezMTO</title>
         <meta
           name="description"
           content="Discover why ezMTO was created to solve the inefficiencies and mistakes common 

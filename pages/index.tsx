@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>ezMTO Home: Takeoffs Made Effortless</title>
+        <title>Takeoffs Made Effortless | ezMTO</title>
         <meta
           name="description"
           content="Simplifying the pipe fabrication bid process from beginning to end. 
@@ -18,7 +18,9 @@ const Home: NextPage = () => {
       </Head>
       <Header></Header>
       {/* Banner */}
-      <figure className={`${styles.homeBanner} jumbotron jumbotron-fluid p-5`}>
+      <figure
+        className={`${styles.homeBanner} jumbotron jumbotron-fluid p-5 bg-image`}
+      >
         <div className="container mt-5 mb-5 pt-5 pb-5">
           <div className="col-0 col-md-1"></div>
           <div className="col-12 col-md-5 text-center">
