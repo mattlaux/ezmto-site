@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             <article className="card h-100 pb-4">
               <figure>
                 <Image
-                  src="/../public/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.jpg"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
             <article className="card h-100 pb-4">
               <figure>
                 <Image
-                  src="/../public/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.jpg"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
             <article className="card h-100 pb-4">
               <figure>
                 <Image
-                  src="/../public/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.jpg"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -130,7 +130,7 @@ const Home: NextPage = () => {
             <article className="card h-100 pb-4">
               <figure>
                 <Image
-                  src="/../public/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.jpg"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -234,7 +234,7 @@ const Home: NextPage = () => {
             <figure>
               <a href="{% url 'about'%}">
                 <Image
-                  src="/../public/images/mtoExample.png"
+                  src="/images/mtoExample.png"
                   className="rounded"
                   height={1234}
                   width={1820}
@@ -258,7 +258,7 @@ const Home: NextPage = () => {
             <div className="card h-100">
               <figure>
                 <Image
-                  src="/../public/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.jpg"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -280,7 +280,7 @@ const Home: NextPage = () => {
             <div className="card h-100">
               <figure>
                 <Image
-                  src="/../public/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.jpg"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -301,7 +301,7 @@ const Home: NextPage = () => {
             <div className="card h-100">
               <figure>
                 <Image
-                  src="/../public/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.jpg"
                   className="card-img-top"
                   height={1306}
                   width={2295}
