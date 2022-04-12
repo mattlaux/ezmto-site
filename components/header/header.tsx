@@ -55,7 +55,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="login">
+                <Link href="/login">
                   <a
                     className="nav-link text-secondary active"
                     aria-current="page"

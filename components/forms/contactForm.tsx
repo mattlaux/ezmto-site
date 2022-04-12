@@ -2,7 +2,7 @@ import React from 'react';
 import { formValidation } from '../../lib/formValidation';
 
 const ContactForm = () => {
-  const submitContactInfo = (event: React.FormEvent) => {
+  const handleContactInfo = (event: React.FormEvent) => {
     event.preventDefault();
     const validated = formValidation(event);
     if (validated) (event.target as HTMLFormElement).reset();
@@ -10,7 +10,7 @@ const ContactForm = () => {
 
   return (
     <form
-      onSubmit={submitContactInfo}
+      onSubmit={handleContactInfo}
       className="form mb-5 pb-5 needs-validation bg-light rounded pt-3"
       noValidate
     >
