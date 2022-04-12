@@ -5,7 +5,7 @@ import Footer from '../components/footer/footer';
 import styles from '../styles/Contact.module.css';
 import ContactForm from '../components/forms/contactForm';
 
-export const Contact: NextPage = () => {
+const Contact: NextPage = () => {
   return (
     <div>
       <Head>
