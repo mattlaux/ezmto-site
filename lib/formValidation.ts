@@ -1,5 +1,15 @@
+/**
+ * Handles form validation
+ * 
+ * @param event - Event from form submission. Uses form id from event target to 
+ * apply validation to correct form.
+ * @returns - true if valid and false if not valid
+ * 
+ */
+
 export const formValidation = (event: React.FormEvent) => {
-  const form = document.querySelector('.needs-validation') as HTMLFormElement;
+  const target = event.target as Element;
+  const form = document.querySelector(`#${target.id}`) as HTMLFormElement;
   if(form) {
     if (!form.checkValidity()) {
       event.stopPropagation();

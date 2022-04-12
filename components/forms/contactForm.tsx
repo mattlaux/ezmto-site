@@ -13,6 +13,7 @@ const ContactForm = () => {
       onSubmit={handleContactInfo}
       className="form mb-5 pb-5 needs-validation bg-light rounded pt-3"
       noValidate
+      id="contactForm"
     >
       <div className="d-none d-md-block">
         <div className="row m-3">
