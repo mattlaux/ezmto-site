@@ -41,9 +41,13 @@ const Login: NextPage = () => {
               <p>
                 Not a customer?
                 <span>
-                  <Link href="/signup">
-                    <a className="btn btn-primary ms-3">Try for Free</a>
-                  </Link>
+                  <button className="btn btn-primary ms-3">
+                    <Link href="/signup">
+                      <a className="text-decoration-none text-white">
+                        Try for Free
+                      </a>
+                    </Link>
+                  </button>
                 </span>
               </p>
             </div>
@@ -68,9 +72,13 @@ const Login: NextPage = () => {
                   <p>Not a customer?</p>
                 </div>
                 <div className="col-6 d-flex justify-content-start">
-                  <Link href="/signup">
-                    <a className="btn btn-primary">Try for Free</a>
-                  </Link>
+                  <button className="btn btn-primary">
+                    <Link href="/signup">
+                      <a className="text-decoration-none text-white">
+                        Try for Free
+                      </a>
+                    </Link>
+                  </button>
                 </div>
               </aside>
             </div>
@@ -91,9 +99,13 @@ const Login: NextPage = () => {
                   <li>Trial quote and bidtab functionalities</li>
                   <li>Online training and demos</li>
                 </ul>
-                <Link href="/signup">
-                  <a className="btn btn-primary">Create Free Account</a>
-                </Link>
+                <button className="btn btn-primary">
+                  <Link href="/signup">
+                    <a className="text-decoration-none text-white">
+                      Create Free Account
+                    </a>
+                  </Link>
+                </button>
               </aside>
             </div>
           </section>

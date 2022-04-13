@@ -28,7 +28,7 @@ const About: NextPage = () => {
           quality quotes.
         </p>
         <button className="btn btn-primary">
-          <Link href="">
+          <Link href="/demo">
             <a className="text-decoration-none text-white">Watch Demos</a>
           </Link>
         </button>
