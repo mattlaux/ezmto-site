@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -30,15 +31,17 @@ const Home: NextPage = () => {
             <p className="text-white">
               Discover how ezMTO can increase your efficiency
             </p>
-            <button type="button" className="btn btn-primary mt-3">
-              <a className="text-decoration-none text-white" href="#">
-                Start a Free Trial
-              </a>
+            <button className="btn btn-primary mt-3">
+              <Link href="/signup">
+                <a className="text-decoration-none text-white">
+                  Start a Free Trial
+                </a>
+              </Link>
             </button>
-            <button type="button" className="btn btn-primary mt-3">
-              <a className="text-decoration-none text-white" href="#">
-                Watch a Demo
-              </a>
+            <button className="btn btn-primary mt-3">
+              <Link href="/demo">
+                <a className="text-decoration-none text-white">Watch a Demo</a>
+              </Link>
             </button>
           </div>
           <div className="col-0 col-md-6"></div>
@@ -69,9 +72,9 @@ const Home: NextPage = () => {
                   fully automated in a couple of minutes.
                 </p>
                 <button className="btn btn-primary w-100">
-                  <a className="text-decoration-none text-white" href="#">
-                    View Demo
-                  </a>
+                  <Link href="/demo">
+                    <a className="text-decoration-none text-white">View Demo</a>
+                  </Link>
                 </button>
               </div>
             </article>
@@ -94,9 +97,9 @@ const Home: NextPage = () => {
                   software highlights any differences.
                 </p>
                 <button className="btn btn-primary w-100">
-                  <a className="text-decoration-none text-white" href="#">
-                    View Demo
-                  </a>
+                  <Link href="/demo">
+                    <a className="text-decoration-none text-white">View Demo</a>
+                  </Link>
                 </button>
               </div>
             </article>
@@ -119,9 +122,9 @@ const Home: NextPage = () => {
                   without leaving the software.
                 </p>
                 <button className="btn btn-primary w-100">
-                  <a className="text-decoration-none text-white" href="#">
-                    View Demo
-                  </a>
+                  <Link href="/demo">
+                    <a className="text-decoration-none text-white">View Demo</a>
+                  </Link>
                 </button>
               </div>
             </article>
@@ -144,9 +147,9 @@ const Home: NextPage = () => {
                   on quotes submitted by vendors.
                 </p>
                 <button className="btn btn-primary w-100">
-                  <a className="text-decoration-none text-white" href="#">
-                    View Demo
-                  </a>
+                  <Link href="/demo">
+                    <a className="text-decoration-none text-white">View Demo</a>
+                  </Link>
                 </button>
               </div>
             </article>
@@ -224,23 +227,23 @@ const Home: NextPage = () => {
               Upload your isometrics to ezMTO&apos;s software.
             </p>
             <button className="btn btn-primary">
-              <a href="#" className="text-decoration-none text-white">
-                Click here to get a free material takeoff on us
-              </a>
+              <Link href="/signup">
+                <a className="text-decoration-none text-white">
+                  Click here to get a free material takeoff on us
+                </a>
+              </Link>
             </button>
           </div>
           {/* Side with image */}
           <div className="col-12 col-md-6 mt-3">
             <figure>
-              <a href="{% url 'about'%}">
-                <Image
-                  src="/images/mtoExample.png"
-                  className="rounded"
-                  height={1234}
-                  width={1820}
-                  alt=""
-                />
-              </a>
+              <Image
+                src="/images/mtoExample.png"
+                className="rounded"
+                height={1234}
+                width={1820}
+                alt=""
+              />
               <figcaption>Example of MTO produced by ezMTO</figcaption>
             </figure>
           </div>
