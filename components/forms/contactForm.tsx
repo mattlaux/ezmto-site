@@ -1,9 +1,9 @@
 import React from 'react';
-import { formValidation } from '../../lib/formValidation';
 
 const ContactForm = () => {
-  const handleContactInfo = (event: React.FormEvent) => {
+  const handleContactInfo = async (event: React.FormEvent) => {
     event.preventDefault();
+    const formValidation = (await import('../../lib/formValidation')).default;
     const validated = formValidation(event);
     if (validated) (event.target as HTMLFormElement).reset();
   };

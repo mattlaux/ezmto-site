@@ -6,18 +6,22 @@
  */
 
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import LoginForm from '../components/forms/loginForm';
 import Link from 'next/link';
+import SEO from '../components/SEO/seo';
 
 const Login: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Login | ezMTO</title>
-        <meta name="description" content="Login to ezMTO's web application" />
-      </Head>
-
+      <SEO
+        url="https://ezmto.com/login"
+        openGraphType="website"
+        schemaType="website"
+        title="Login"
+        description="Simplifying the pipe fabrication bid process from beginning to end. 
+        Save time, energy, and money on material takeoffs, acquiring bids, and creating bid tabs."
+        image="https://ezmto.com/images/chemicalPlant.jpg"
+      />
       <main className="container-fluid">
         {/* Mobile Login page */}
         <section className="d-md-none row mt-5">

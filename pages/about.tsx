@@ -1,21 +1,22 @@
-import Head from 'next/head';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import type { NextPage } from 'next';
 import Link from 'next/link';
+import SEO from '../components/SEO/seo';
 
 const About: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Our Takeoff Philosophy | ezMTO</title>
-        <meta
-          name="description"
-          content="Discover why ezMTO was created to solve the inefficiencies and mistakes common 
-            in the material takeoff and bid process. Learn how ezMTO solves these problems and how as a company
-            we plan to continue to improve our offerings to clients such as yourself."
-        />
-      </Head>
+      <SEO
+        url="https://ezmto.com/about"
+        openGraphType="website"
+        schemaType="website"
+        title="Our Takeoff Philosophy"
+        description="Discover why ezMTO was created to solve the inefficiencies and mistakes common 
+        in the material takeoff and bid process. Learn how ezMTO solves these problems and how as a company
+        we plan to continue to improve our offerings to clients such as yourself."
+        image="https://ezmto.com/images/chemicalPlant.jpg"
+      />
       <Header></Header>
       <article className="container text-center mt-5">
         <header>
