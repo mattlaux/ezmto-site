@@ -1,22 +1,25 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import Link from 'next/link';
+import SEO from '../components/SEO/seo';
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Takeoffs Made Effortless | ezMTO</title>
-        <meta
-          name="description"
-          content="Simplifying the pipe fabrication bid process from beginning to end. 
-          Save time, energy, and money on material takeoffs, acquiring bids, and creating bid tabs."
-        />
-      </Head>
+      <SEO
+        url="https://ezmto.com/"
+        openGraphType="website"
+        schemaType="website"
+        title="Takeoffs Made Effortless"
+        description="Simplifying the pipe fabrication bid process from beginning to end. 
+        Save time, energy, and money on material takeoffs, acquiring bids, and creating bid tabs."
+        image="https://ezmto.com/images/chemicalPlant.jpg"
+        createdAt="2022-04-17"
+        updatedAt="2022-04-17"
+      />
       <Header></Header>
       {/* Banner */}
       <figure

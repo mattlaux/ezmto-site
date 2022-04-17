@@ -1,22 +1,23 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import styles from '../styles/Contact.module.css';
 import ContactForm from '../components/forms/contactForm';
+import SEO from '../components/SEO/seo';
 
 const Contact: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Start simplying your takeoffs today | ezMTO</title>
-        <meta
-          name="description"
-          content="Reach out today to discover how ezMTO can significantly cut the time and energy 
+      <SEO
+        url="https://ezmto.com/contact"
+        openGraphType="website"
+        schemaType="website"
+        title="Start simplying your takeoffs today"
+        description="Reach out today to discover how ezMTO can significantly cut the time and energy 
         spent on material takeoffs and bids. ezMTO offers savings by decreasing the amount of personnel required to handle
         the takeoff and bid process as well as by decreasing mistakes."
-        />
-      </Head>
+        image="https://ezmto.com/images/chemicalPlant.jpg"
+      />
       <Header></Header>
       <article
         className={`${styles.contactBackground} container-fluid mb-3 bg-image`}
