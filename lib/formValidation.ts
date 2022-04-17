@@ -7,7 +7,7 @@
  * 
  */
 
-export const formValidation = (event: React.FormEvent) => {
+const formValidation = (event: React.FormEvent) => {
   const target = event.target as Element;
   const form = document.querySelector(`#${target.id}`) as HTMLFormElement;
   if(form) {
@@ -22,3 +22,5 @@ export const formValidation = (event: React.FormEvent) => {
     }
   }
 };
+
+export default formValidation;
