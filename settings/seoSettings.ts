@@ -1,10 +1,10 @@
 /**
  * Establishes default settings for the seo component
- * 
+ *
  * graphql and routes objects are commented out as these are
  * currently not in use. May be implemented later on as
  * the SEO strategy develops
- * 
+ *
  * TODOS:
  *  1. Update social twitter to proper values
  */
@@ -17,10 +17,10 @@ const settings = {
   meta: {
     rootUrl: 'https://ezmto',
     title: 'ezMTO',
-    description: 'ezMTO saves time and money by automating and simplifying the material takeoff and bid process.',
+    description:
+      'ezMTO saves time and money by automating and simplifying the material takeoff and bid process.',
     social: {
-      graphic:
-        'https://ezmto.com/images/chemicalPlant.jpg',
+      graphic: 'https://ezmto.com/images/chemicalPlant.jpg',
       twitter: '@cheatcodetuts',
     },
   },
