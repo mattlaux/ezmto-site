@@ -16,7 +16,7 @@ const Contact: NextPage = () => {
         description="Reach out today to discover how ezMTO can significantly cut the time and energy 
         spent on material takeoffs and bids. ezMTO offers savings by decreasing the amount of personnel required to handle
         the takeoff and bid process as well as by decreasing mistakes."
-        image="https://ezmto.com/images/chemicalPlant.jpg"
+        image="https://ezmto.com/images/chemicalPlantSocial.webp"
       />
       <Header></Header>
       <article

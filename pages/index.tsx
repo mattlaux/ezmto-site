@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         title="Takeoffs Made Effortless"
         description="Simplifying the pipe fabrication bid process from beginning to end. 
         Save time, energy, and money on material takeoffs, acquiring bids, and creating bid tabs."
-        image="https://ezmto.com/images/chemicalPlant.jpg"
+        image="https://ezmto.com/images/chemicalPlantSocial.webp"
         createdAt="2022-04-17"
         updatedAt="2022-04-17"
       />
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
             <article className="card h-100 pb-4">
               <figure>
                 <Image
-                  src="/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.webp"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
             <article className="card h-100 pb-4">
               <figure>
                 <Image
-                  src="/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.webp"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
             <article className="card h-100 pb-4">
               <figure>
                 <Image
-                  src="/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.webp"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -136,7 +136,7 @@ const Home: NextPage = () => {
             <article className="card h-100 pb-4">
               <figure>
                 <Image
-                  src="/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.webp"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -241,7 +241,7 @@ const Home: NextPage = () => {
           <div className="col-12 col-md-6 mt-3">
             <figure>
               <Image
-                src="/images/mtoExample.png"
+                src="/images/mtoExample.webp"
                 className="rounded"
                 height={1234}
                 width={1820}
@@ -264,7 +264,7 @@ const Home: NextPage = () => {
             <div className="card h-100">
               <figure>
                 <Image
-                  src="/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.webp"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -286,7 +286,7 @@ const Home: NextPage = () => {
             <div className="card h-100">
               <figure>
                 <Image
-                  src="/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.webp"
                   className="card-img-top"
                   height={1306}
                   width={2295}
@@ -307,7 +307,7 @@ const Home: NextPage = () => {
             <div className="card h-100">
               <figure>
                 <Image
-                  src="/images/chemicalPlant.jpg"
+                  src="/images/chemicalPlant.webp"
                   className="card-img-top"
                   height={1306}
                   width={2295}
