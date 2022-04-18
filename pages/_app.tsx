@@ -10,11 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       : null;
   }, []);
 
-  return (
-    <div>
-      <Component {...pageProps} />
-    </div>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
