@@ -20,7 +20,7 @@ const Login: NextPage = () => {
         title="Login"
         description="Simplifying the pipe fabrication bid process from beginning to end. 
         Save time, energy, and money on material takeoffs, acquiring bids, and creating bid tabs."
-        image="https://ezmto.com/images/chemicalPlant.jpg"
+        image="https://ezmto.com/images/chemicalPlantSocial.webp"
       />
       <main className="container-fluid">
         {/* Mobile Login page */}

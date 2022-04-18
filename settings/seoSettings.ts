@@ -20,7 +20,7 @@ const settings = {
     description:
       'ezMTO saves time and money by automating and simplifying the material takeoff and bid process.',
     social: {
-      graphic: 'https://ezmto.com/images/chemicalPlant.jpg',
+      graphic: 'https://ezmto.com/images/chemicalPlantSocial.webp',
       twitter: '@cheatcodetuts',
     },
   },

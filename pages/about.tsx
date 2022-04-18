@@ -15,7 +15,7 @@ const About: NextPage = () => {
         description="Discover why ezMTO was created to solve the inefficiencies and mistakes common 
         in the material takeoff and bid process. Learn how ezMTO solves these problems and how as a company
         we plan to continue to improve our offerings to clients such as yourself."
-        image="https://ezmto.com/images/chemicalPlant.jpg"
+        image="https://ezmto.com/images/chemicalPlantSocial.webp"
       />
       <Header></Header>
       <article className="container text-center mt-5">
