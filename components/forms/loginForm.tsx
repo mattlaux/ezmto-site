@@ -2,7 +2,7 @@
  * Renders the Login Form and handles submission
  *
  * @param deviceType - Desktop or Mobile to handle proper form rendering and validation
- * @returns login form with inputs: username, password.
+ * @returns login form with inputs: email, password.
  *
  * If data validation is successful user is redirected to their dashboard at subdomain
  *
@@ -12,7 +12,7 @@
  */
 
 import React from 'react';
-import { formValidation } from '../../lib/formValidation';
+import formValidation from '../../lib/formValidation';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 
@@ -23,11 +23,28 @@ interface deviceType {
 const LoginForm = (props: deviceType) => {
   const router = useRouter();
 
-  const handleLoginInfo = (event: React.FormEvent) => {
+  const handleLoginInfo = async (event: React.FormEvent) => {
     event.preventDefault();
     const validated = formValidation(event);
     if (validated) {
+      type LoginDetails = EventTarget & {
+        email: HTMLInputElement;
+        password: HTMLInputElement;
+      };
+      const target = event.target as LoginDetails;
+      const res = await fetch('http://localhost:4000/api/auth/login', {
+        body: JSON.stringify({
+          email: target.email.value,
+          password: target.password.value,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      });
       (event.target as HTMLFormElement).reset();
+      const result = await res.json();
+      console.log(result);
       router.push('/');
     }
   };
@@ -40,17 +57,29 @@ const LoginForm = (props: deviceType) => {
       id="mobileForm"
     >
       <div>
-        <label htmlFor="username" className="form-label">
-          Username
+        <label htmlFor="email" className="form-label">
+          Email
         </label>
-        <input id="username" type="text" required className="form-control" />
+        <input
+          id="email"
+          name="email"
+          type="text"
+          required
+          className="form-control"
+        />
         <div className="invalid-feedback">This field is required.</div>
       </div>
       <div>
         <label htmlFor="password" className="form-label">
           Password
         </label>
-        <input id="password" type="text" required className="form-control" />
+        <input
+          id="password"
+          name="password"
+          type="text"
+          required
+          className="form-control"
+        />
         <div className="invalid-feedback">This field is required.</div>
       </div>
       <div className="d-flex justify-content-center mt-3">
@@ -67,17 +96,29 @@ const LoginForm = (props: deviceType) => {
       id="desktopForm"
     >
       <div>
-        <label htmlFor="username" className="form-label">
-          Username
+        <label htmlFor="email" className="form-label">
+          Email
         </label>
-        <input id="username" type="text" required className="form-control" />
+        <input
+          id="email"
+          name="email"
+          type="text"
+          required
+          className="form-control"
+        />
         <div className="invalid-feedback">This field is required.</div>
       </div>
       <div>
         <label htmlFor="password" className="form-label">
           Password
         </label>
-        <input id="password" type="text" required className="form-control" />
+        <input
+          id="password"
+          name="password"
+          type="text"
+          required
+          className="form-control"
+        />
         <div className="invalid-feedback">This field is required.</div>
       </div>
       <div className="d-flex justify-content-center mt-3">
