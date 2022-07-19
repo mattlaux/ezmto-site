@@ -13,7 +13,6 @@
 
 import React from 'react';
 import { useRouter } from 'next/router';
-import PropTypes from 'prop-types';
 
 interface deviceType {
   deviceType: string;
@@ -47,7 +46,7 @@ const LoginForm = (props: deviceType) => {
       });
       (event.target as HTMLFormElement).reset();
       const result = await res.json();
-      router.push('/');
+      router.push('/app/dashboard');
     }
   };
 
@@ -78,7 +77,7 @@ const LoginForm = (props: deviceType) => {
         <input
           id="password"
           name="password"
-          type="text"
+          type="password"
           required
           className="form-control"
         />
@@ -117,7 +116,7 @@ const LoginForm = (props: deviceType) => {
         <input
           id="password"
           name="password"
-          type="text"
+          type="password"
           required
           className="form-control"
         />
@@ -130,10 +129,6 @@ const LoginForm = (props: deviceType) => {
       </div>
     </form>
   );
-};
-
-LoginForm.propTypes = {
-  deviceType: PropTypes.string.isRequired,
 };
 
 export default LoginForm;
