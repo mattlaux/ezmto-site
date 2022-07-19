@@ -12,7 +12,6 @@
  */
 
 import React from 'react';
-import formValidation from '../../lib/formValidation';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 
@@ -25,6 +24,7 @@ const LoginForm = (props: deviceType) => {
 
   const handleLoginInfo = async (event: React.FormEvent) => {
     event.preventDefault();
+    const formValidation = (await import('../../lib/formValidation')).default;
     const validated = formValidation(event);
     if (validated) {
       type LoginDetails = EventTarget & {
@@ -32,19 +32,21 @@ const LoginForm = (props: deviceType) => {
         password: HTMLInputElement;
       };
       const target = event.target as LoginDetails;
+      // add error / timeout for fetch
       const res = await fetch('http://localhost:4000/api/auth/login', {
         body: JSON.stringify({
           email: target.email.value,
           password: target.password.value,
         }),
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
+          'X-Custom-Header': 'lollipop',
         },
         method: 'POST',
       });
       (event.target as HTMLFormElement).reset();
       const result = await res.json();
-      console.log(result);
       router.push('/');
     }
   };
