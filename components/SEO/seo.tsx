@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import settings from '../../settings/seoSettings';
 import Script from 'next/script';
+import DOMPurify from 'isomorphic-dompurify';
 
 interface Props {
   openGraphType: string;
@@ -11,7 +12,7 @@ interface Props {
   image: string;
   createdAt?: string;
   updatedAt?: string;
-  schemaType?: string;
+  schemaType: string;
 }
 
 const socialTags = ({
@@ -80,7 +81,6 @@ const SEO = (props: Props) => {
           key="keywords"
         />
         <meta name="author" content="Matt Laux" key="author" />
-        {/*Update favicon*/}
         <link rel="icon" href="/favicon.ico" />
         <title>{title} | ezMTO</title>
         <meta name="description" content={description} />
@@ -97,10 +97,10 @@ const SEO = (props: Props) => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'http://schema.org',
-            '@type': schemaType,
-            name: title,
-            about: description,
-            url: url,
+            '@type': DOMPurify.sanitize(schemaType),
+            name: DOMPurify.sanitize(title),
+            about: DOMPurify.sanitize(description),
+            url: DOMPurify.sanitize(url),
           }),
         }}
       />
