@@ -1,5 +1,9 @@
 import React from 'react';
 
+/**
+ * Not integrated with an email service. Simply clears information on successful form submission
+ * @returns Contact form for contact page
+ */
 const ContactForm = () => {
   const handleContactInfo = async (event: React.FormEvent) => {
     event.preventDefault();

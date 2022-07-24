@@ -1,15 +1,12 @@
-/**
- *
- * @param - None
- * @returns - Rendered login page including login form
- *
- */
-
 import type { NextPage } from 'next';
 import LoginForm from '../components/forms/loginForm';
 import Link from 'next/link';
 import SEO from '../components/SEO/seo';
 
+/**
+ *
+ * @returns - Rendered login page including login form
+ */
 const Login: NextPage = () => {
   return (
     <div>

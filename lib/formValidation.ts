@@ -6,13 +6,13 @@
  * @returns - true if valid and false if not valid
  *
  */
-
 const formValidation = (event: React.FormEvent) => {
   const target = event.target as Element;
   const form = document.querySelector(`#${target.id}`) as HTMLFormElement;
   if (form) {
     if (!form.checkValidity()) {
       event.stopPropagation();
+      // class was-validated indicates form underwent verification process but failed
       form.classList.add('was-validated');
       return false;
     } else {

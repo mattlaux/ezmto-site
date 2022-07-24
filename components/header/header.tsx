@@ -1,5 +1,9 @@
 import Link from 'next/link';
 
+/**
+ *
+ * @returns Header for pages that do not require login
+ */
 const Header = () => {
   return (
     <header className="container-fluid">

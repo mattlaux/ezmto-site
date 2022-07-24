@@ -1,5 +1,9 @@
 import Link from 'next/link';
 
+/**
+ *
+ * @returns Footer page used for all pages that do not require login
+ */
 const Footer = () => {
   return (
     <footer className="container-fluid bg-light overflow-hidden">
