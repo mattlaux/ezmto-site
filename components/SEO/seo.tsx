@@ -69,6 +69,7 @@ const socialTags = ({
 
 const SEO = (props: Props) => {
   const { url, title, description, image, schemaType } = props;
+  const stringTitle = `${title} | ezMTO`;
 
   return (
     <>
@@ -82,7 +83,7 @@ const SEO = (props: Props) => {
         />
         <meta name="author" content="Matt Laux" key="author" />
         <link rel="icon" href="/favicon.ico" />
-        <title>{title} | ezMTO</title>
+        <title>{stringTitle}</title>
         <meta name="description" content={description} />
         <meta itemProp="name" content={title} />
         <meta itemProp="description" content={description} />
